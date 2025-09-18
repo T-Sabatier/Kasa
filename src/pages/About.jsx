@@ -3,7 +3,10 @@ import Banner from "../components/Banner/Banner"
 
 function About (){
   return (
-    <Banner BannerImg={BannerAbout}/>
+    <Banner
+      BannerImg={BannerAbout}
+      Text=""
+      />
   )
 }
 

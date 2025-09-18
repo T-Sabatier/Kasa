@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+    &__nav {
+      display: flex;
+      gap:40px;
+    
+    }
+      &__link{
+        text-decoration: none;
+      
+        &--active {
+          text-decoration: underline;
+        }
+      }
+    
+
+}

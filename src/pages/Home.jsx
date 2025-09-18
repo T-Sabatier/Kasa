@@ -1,9 +1,9 @@
+import BannerHome from "../assets/BannerHome.png"
+import Banner from "../components/Banner/Banner"
 
 function Home (){
   return (
-    <p>
-      home
-    </p>
+      <Banner BannerImg={BannerHome} />
   )
 }
 export default Home

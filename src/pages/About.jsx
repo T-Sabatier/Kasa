@@ -1,8 +1,10 @@
+import BannerAbout from "../assets/BannerAbout.png"
+import Banner from "../components/Banner/Banner"
+
 function About (){
   return (
-    <p>
-      A propos
-    </p>
+    <Banner BannerImg={BannerAbout}/>
   )
 }
+
 export default About

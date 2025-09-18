@@ -12,7 +12,7 @@ function Header () {
     <div className="header__nav">
       <NavLink to ='/'
       className={({ isActive }) => 
-        `header__link ${isActive ? 'header__link--active':''}`
+      `header__link ${isActive ? 'header__link--active':''}`
     }
     >
       Accueil

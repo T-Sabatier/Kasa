@@ -11,7 +11,7 @@ function Home (){
         Text ="Chez vous, partout et ailleurs"
       />
       <div className="cards">
-        {DataLogement.map((logement)=> (
+        {DataLogement.map((logement)=> (    //{DataLogement.slice (0,6).map((logement)=> (
         <Card
         key={logement.id}
         id={logement.id}

@@ -6,6 +6,7 @@ return (
 <Link to= {`/logement/${id}`}>
 <div className="card">
   <img className ="card__img" src = {cover} />
+  <div className="card__overlay"></div>
   <h2 className="card__title">{title}</h2>
 </div>
 </Link>

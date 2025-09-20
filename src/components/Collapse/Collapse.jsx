@@ -1,6 +1,5 @@
 import {useState} from 'react'
 import ArrowClose from "../../assets/arrowback.png"
-import ArrowOpen from "../../assets/arrowopen.png"
 import "./Collapse.style.scss"
 
 function Collapse ({CollapseTitle, CollapseContent}){
@@ -9,11 +8,22 @@ function Collapse ({CollapseTitle, CollapseContent}){
 
   return (
     <div className ="collapse">
-    <h2 className ="collapse__title">{CollapseTitle} </h2>
-    {isOpen && <p id = "Text" className ="collapse__content">{CollapseContent} </p>}
-    <img className ="collapse__arrow" src = {isOpen ? ArrowOpen : ArrowClose}
-     onClick={()=> setisOpen (!isOpen)}/>
+      <div className="collapse__header">
+      <h2 className ="collapse__title">{CollapseTitle} </h2>
+      <img
+        src={ArrowClose}
+        alt="flèche"
+        className={`collapse__arrow ${isOpen ? "open" : ""}`} // ? est true (ajoute open) : sinon rien
+        onClick={() => setisOpen(!isOpen)}
+      />
     </div>
+      <p 
+        className={`collapse__content ${isOpen ? "open" : ""}`}>
+        {CollapseContent}
+      </p>
+    </div>
+    
+
   )
 }
 export default Collapse

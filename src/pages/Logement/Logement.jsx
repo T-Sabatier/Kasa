@@ -5,6 +5,7 @@ import Tags from "../../components/Tags/Tags"
 import DataLogement from "../../data/logements.json"
 import Collapse from "../../components/Collapse/Collapse.jsx"
 import Equipments from "../../components/Equipments/Equipments"
+import Description from "../../components/Description/Description"
 import {useParams} from 'react-router-dom'
 import "./Logement.style.scss"
 
@@ -33,10 +34,10 @@ function Logement (){
 
     <div className ="logement_collapse">
     <Collapse className="collapse" CollapseTitle = "Equipements" CollapseContent = {<Equipments equipments={logementFind.equipments} />} />
-    <Collapse className="collapse" CollapseTitle = "Description" CollapseContent = {logementFind.description} />
+    <Collapse className="collapse" CollapseTitle = "Description" CollapseContent = {<Description description={logementFind.description}/>} />
     </div>
     </div>
-    </div>
+    </div>gr
     
   )
 }

@@ -37,7 +37,7 @@ function Logement (){
     <Collapse className="collapse" CollapseTitle = "Description" CollapseContent = {<Description description={logementFind.description}/>} />
     </div>
     </div>
-    </div>gr
+    </div>
     
   )
 }

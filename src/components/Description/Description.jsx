@@ -1,3 +1,5 @@
+import "./Description.style.scss"
+
 function Description ({description}){
   return(
     <div className ="description">{description}</div>

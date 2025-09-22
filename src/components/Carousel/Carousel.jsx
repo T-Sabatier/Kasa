@@ -8,17 +8,19 @@ function Carousel ({pictures}) {
   
   return (
     <div className="carousel">
+      {pictures.length > 1 && (
       <div className="carousel__btn carousel__btn--previous" 
            onClick={() => setPicture((picture - 1 + pictures.length) % pictures.length)}>
         <img src={Previous} alt="Précédent" />
-      </div>
+      </div> )}
       
       <img className="carousel__img" src={pictures[picture]} />
       
+      {pictures.length > 1 && (
       <div className="carousel__btn carousel__btn--next" 
            onClick={() => setPicture((picture + 1) % pictures.length)}>
         <img src={Next} alt="Suivant" />
-      </div>
+      </div> )}
     </div>
   )
 }

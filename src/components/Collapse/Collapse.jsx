@@ -17,10 +17,10 @@ function Collapse ({CollapseTitle, CollapseContent}){
         onClick={() => setisOpen(!isOpen)}
       />
     </div>
-      <p 
+      <div 
         className={`collapse__content ${isOpen ? "open" : ""}`}>
         {CollapseContent}
-      </p>
+      </div>
     </div>
     
 

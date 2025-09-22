@@ -1,0 +1,19 @@
+.avatar{
+  display: flex;
+  align-items: center;
+  
+    &__name{
+      color:#FF6060 ;
+      width: 80px;
+      text-align: right;
+      margin-right: 5px;
+    }
+    &__picture{
+    width: 5vw;
+    height: 5vw;
+    min-width: 40px;
+    max-width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    }
+}

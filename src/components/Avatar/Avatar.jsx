@@ -1,3 +1,5 @@
+import "./Avatar.style.scss"
+
 function Avatar ({host}) {
 return (
   <div className = "avatar">

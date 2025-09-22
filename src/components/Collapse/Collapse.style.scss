@@ -22,6 +22,7 @@
         }
     }
     &__content{
+      font-size:1.2vw;
       margin: 0;
       max-height: 0;
       overflow: hidden;
@@ -29,7 +30,7 @@
       transition: max-height 0.8s ease-out, padding 0.8s ease-out;
        &.open{
           max-height: 100px;
-          margin:0
+          margin:0;
         }
       
     }

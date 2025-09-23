@@ -1,5 +1,6 @@
 import StarActive from "../../assets/star-active 1.png"
 import StarInactive from "../../assets/star-inactive 1.png"
+import "./Rating.style.scss"
 
 function Rating ({rating}) {
 

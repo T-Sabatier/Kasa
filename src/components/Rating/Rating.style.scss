@@ -1,0 +1,12 @@
+.rating img{
+  width: 5vmin;
+  height: 5vmin;
+    @media (max-width :767px){
+      width: 7vmin;
+      height: 7vmin;
+    }
+
+}
+.rating {
+  margin-top: 20px;
+}

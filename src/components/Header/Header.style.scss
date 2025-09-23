@@ -8,7 +8,11 @@
     }
     &__nav {
       display: flex;
-      gap:40px;
+      gap:60px;
+        @media (max-width :767px){
+          gap:20px;
+          font-size: 0.8rem;;
+        }
     
     }
       &__link{

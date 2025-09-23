@@ -22,15 +22,16 @@ function Logement (){
     <div className ="logement_header"> 
       <div className="logement_principal">
         <h1 className="logement_title">{logementFind.title}</h1>
+        <p className="logement_location">{logementFind.location}</p>
+        <Tags tags = {logementFind.tags} />
       </div>
-    <Avatar  host ={logementFind.host}/>
-    </div>
-
-    <p className="logement_location">{logementFind.location}</p>
+    
 
     <div className="logement_tags_rating">
-    <Tags tags = {logementFind.tags} />
+    <Avatar  host ={logementFind.host}/>
     <Rating rating = {logementFind.rating}/>
+    
+    </div>
     </div>
 
     <div className ="logement_collapse">

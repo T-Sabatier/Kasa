@@ -42,3 +42,15 @@
   }
   
 }
+
+@media (max-width :767px){
+  .cards{
+    grid-template-columns: 1fr;
+    gap : 20px;
+    padding: 20px;
+  }
+  .cards .card__title{
+      font-size: 12px;
+    }
+  }
+

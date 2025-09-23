@@ -6,14 +6,19 @@
       color:#FF6060 ;
       width: 80px;
       text-align: right;
-      margin-right: 5px;
+      margin-left: auto;
     }
     &__picture{
-    width: 5vw;
-    height: 5vw;
+    width: 10vmin;
+    height: 10vmin;
     min-width: 40px;
     max-width: 80px;
     border-radius: 50%;
     object-fit: cover;
+    margin-left: 10px ;
+      @media (max-width :767px){
+        width: 12vmin;
+      height: 12vmin;
     }
+}
 }

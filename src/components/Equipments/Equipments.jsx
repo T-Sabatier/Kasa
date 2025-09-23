@@ -1,3 +1,5 @@
+import "./Equipment.style.scss"
+
 function Equipments ({equipments}){
   return(
     <ul className ="equipments">

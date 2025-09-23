@@ -29,3 +29,13 @@
     object-fit: cover;
   }
 }
+
+@media (max-width :767px){
+  .carousel{
+    margin-top: 20px;
+    aspect-ratio: 1/1;
+  }
+  .carousel img{
+    border-radius: 10px;
+  }
+}

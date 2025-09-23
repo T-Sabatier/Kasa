@@ -33,8 +33,8 @@ function Logement (){
     </div>
 
     <div className ="logement_collapse">
-    <Collapse className="collapse" CollapseTitle = "Equipements" CollapseContent = {<Equipments equipments={logementFind.equipments} />} />
     <Collapse className="collapse" CollapseTitle = "Description" CollapseContent = {<Description description={logementFind.description}/>} />
+    <Collapse className="collapse" CollapseTitle = "Equipements" CollapseContent = {<Equipments equipments={logementFind.equipments} />} />
     </div>
     </div>
     </div>

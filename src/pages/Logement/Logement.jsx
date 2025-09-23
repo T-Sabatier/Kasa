@@ -6,12 +6,13 @@ import DataLogement from "../../data/logements.json"
 import Collapse from "../../components/Collapse/Collapse.jsx"
 import Equipments from "../../components/Equipments/Equipments"
 import Description from "../../components/Description/Description"
-import {useParams} from 'react-router-dom'
+import {useParams, Navigate} from 'react-router-dom'
 import "./Logement.style.scss"
 
 function Logement (){
   const {id} = useParams() 
   const logementFind = DataLogement.find(logement => logement.id ===id);
+  if(!logementFind){return <Navigate to="/error" replace/>}
 
   return (
     <div>

@@ -1,11 +1,10 @@
-.rating img{
+.rating img {
   width: 4vmin;
   height: 4vmin;
-    @media (max-width :480px){
-      width: 7vmin;
-      height: 7vmin;
-    }
-
+  @media (max-width: 480px) {
+    width: 7vmin;
+    height: 7vmin;
+  }
 }
 .rating {
   margin-top: 20px;

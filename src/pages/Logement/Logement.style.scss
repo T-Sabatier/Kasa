@@ -1,46 +1,44 @@
-.logement_title{
-  color:#FF6060;
+.logement_title {
+  color: #ff6060;
   font-size: 1.5rem;
   font-weight: normal;
 }
 
-.logement_collapse{
+.logement_collapse {
   display: flex;
-  gap:60px;
-    .collapse{
-      width:50%;
-    }
+  gap: 60px;
+  .collapse {
+    width: 50%;
+  }
 }
 
-.logement_header{
+.logement_header {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
 
-.logement_location{
+.logement_location {
   font-size: 0.8rem;
 }
 
-@media (max-width :767px){
- 
-  .logement_collapse{
-  display: block;
+@media (max-width: 767px) {
+  .logement_collapse {
+    display: block;
   }
-.logement_header{
-  display: flex;
-  flex-direction: column;
-}
- .logement_collapse .collapse{
-    width:100%
-    }
-  
-  .logement_tags_rating{
+  .logement_header {
+    display: flex;
+    flex-direction: column;
+  }
+  .logement_collapse .collapse {
+    width: 100%;
+  }
+
+  .logement_tags_rating {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
   }
-  
 }

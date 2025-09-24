@@ -1,8 +1,6 @@
-import "./Description.style.scss"
+import "./Description.style.scss";
 
-function Description ({description}){
-  return(
-    <div className ="description">{description}</div>
-  )
+function Description({ description }) {
+  return <div className="description">{description}</div>;
 }
-export default Description
+export default Description;

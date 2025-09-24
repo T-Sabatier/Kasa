@@ -1,15 +1,15 @@
-import BannerHome from '../../assets/BannerHome.png'
-import BannerAbout from '../../assets/BannerAbout.png'
-import "./Banners.style.scss"
+import BannerHome from "../../assets/BannerHome.png";
+import BannerAbout from "../../assets/BannerAbout.png";
+import "./Banners.style.scss";
 
-function Banner ({BannerImg, Text}) {
+function Banner({ BannerImg, Text }) {
   return (
     <div className="banner">
-      <img className="banner__img" src = {BannerImg}  />
+      <img className="banner__img" src={BannerImg} />
       <div className="banner__overlay"></div>
       <h1 className="banner__text">{Text}</h1>
     </div>
-  )
+  );
 }
 
-export default Banner
+export default Banner;

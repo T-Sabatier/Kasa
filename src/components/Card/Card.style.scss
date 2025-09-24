@@ -1,8 +1,8 @@
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
-  gap: 40px;
-  padding: 40px;
+   gap: clamp(10px, 2vw, 40px);
+  padding: clamp(10px, 2vw, 40px);
   background-color: #F6F6F6;
   border-radius: 10px;
 
@@ -35,7 +35,7 @@
       bottom: 10px;
       left: 10px;
       color: #ffffff;
-      font-size: 1vw;
+      font-size: clamp(0.5rem, 1vw, 1.5rem);
       width: 45%;
       
     }
@@ -43,7 +43,7 @@
   
 }
 
-@media (max-width :767px){
+@media (max-width :480px){
   .cards{
     grid-template-columns: 1fr;
     gap : 20px;

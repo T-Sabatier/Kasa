@@ -9,7 +9,7 @@
     &__nav {
       display: flex;
       gap:60px;
-        @media (max-width :767px){
+        @media (max-width :480px){
           gap:20px;
           font-size: 0.8rem;;
         }

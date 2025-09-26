@@ -28,6 +28,14 @@
     height: 100%;
     object-fit: cover;
   }
+  
+  &__counter{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+  }
 }
 
 @media (max-width: 480px) {

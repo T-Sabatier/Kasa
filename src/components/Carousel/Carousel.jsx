@@ -22,6 +22,12 @@ function Carousel({ pictures }) {
       <img className="carousel__img" src={pictures[picture]} />
 
       {pictures.length > 1 && (
+        <div className="carousel__counter">
+          {picture + 1} / {pictures.length}
+        </div>
+      )}
+
+      {pictures.length > 1 && (
         <div
           className="carousel__btn carousel__btn--next"
           onClick={() => setPicture((picture + 1) % pictures.length)}
